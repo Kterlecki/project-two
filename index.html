@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foodies</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            var options = {
+                zoom:8,
+                center: {lat:53.350140,lng:-6.266155}
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options)
+        }
+    </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAr5JwL7eatl7H675zWT3UQTFRsq9568DM&callback=initMap"
+    async defer></script>
+    
+  
+</body>
+</html>
