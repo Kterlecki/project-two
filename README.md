@@ -49,39 +49,39 @@ A pop up window with a confirmation that suggestion was made
 ## Technologies Used
 
 ### HTML5 
--HTML 5 was used as it uses semantic markups to effectively design webages.
+- HTML 5 was used as it uses semantic markups to effectively design webages.
 
 ### CSS3
 
-was used for styling and layout options of the HTML pages.
+- was used for styling and layout options of the HTML pages.
 
 ### Bootstrap 4
 
--was used to style and help with certain aspects of the layout of the HTML page
+- Was used to style and help with certain aspects of the layout of the HTML page
 
 ### JS
--this was used for the map and email sections
+- this was used for the map and email sections
 
 ### Google maps
 - used to link the google Maps API
 
 ### EmailJS
--used to link the contact form to an email API service
+- used to link the contact form to an email API service
 
 ### JQuery
--this was used for bootstrap navbar and animation
+- this was used for bootstrap navbar and animation
 
 ### Google Fonts
--has been used to style the font used. They provide a wide range of accessible fonts that can be used.
+- has been used to style the font used. They provide a wide range of accessible fonts that can be used.
 
 ### Font Awesome 
--was used to add in sharp looking icons. Font awesome provide a wide range of icons that are free of charge and can be used for a variety of scenarioes
+- was used to add in sharp looking icons. Font awesome provide a wide range of icons that are free of charge and can be used for a variety of scenarioes
 ### w3schools
--was used to optimise both CSS and HTML code. Helped me to adjust and insert different features.
+- was used to optimise both CSS and HTML code. Helped me to adjust and insert different features.
 
  ### [Stackoverflow]( https://stackoverflow.com/ /)
 
-Used this webiste for troubleshooting issues to common problems
+- Used this webiste for troubleshooting issues to common problems
 
 # Testing
 
@@ -101,9 +101,9 @@ The links in the footer were also tested for their functionality.
 
 Was also tested on real life devices like :
 
--Samsung S8 and S5
+- Samsung S8 and S5
 
--Iphone X
+- Iphone X
 
 ## Responsive testing
 
