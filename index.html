@@ -12,7 +12,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_H9TRGnnuOYhebuJVlZKGP");
+    })();
+  </script>
 </head>
 
 <body>
@@ -68,19 +73,20 @@
     </div>
   </div>
   <!----------------------------------------------- Map -->
+ 
   <div id="map"></div>
 
 
   <!----------------------------------------------- Contact form -->
 
-  <div class="container">
+  
+   
+  <section class="container-fluid ">
+  <div class="container-fluid ">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-6 pb-5">
-
-
-        <!--------------- Header form-->
-
-        <form action="mail.php" method="post">
+        
+        <form onsubmit="return sendMail(this);">
           <div class="card border-primary rounded-0">
             <div class="card-header p-0">
               <div class="bg-info text-white text-center py-2">
@@ -96,7 +102,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
                   </div>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                  <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                 </div>
               </div>
               <div class="form-group">
@@ -104,7 +110,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
                   </div>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="foodies@gmail.com" required>
+                  <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                 </div>
               </div>
 
@@ -113,29 +119,23 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
                   </div>
-                  <textarea class="form-control" placeholder="Restaurant Name" required></textarea>                </div>
-              </div>
-               <div class="form-group">
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                  </div>
-                  <textarea class="form-control" placeholder="Restaurant Adress" required></textarea>                </div>
+                  <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Restaurant Description" required></textarea> </div>
               </div>
 
+
               <div class="text-center">
-                <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+
+                <button type="submit" class="btn btn-info btn-block rounded-0 py-2">Send Suggestion</button>
+
               </div>
             </div>
 
           </div>
         </form>
-        <!------------ Header form-->
-
-
       </div>
     </div>
   </div>
+</section>
   <!----------------------------------------------- Footer -->
 
 
