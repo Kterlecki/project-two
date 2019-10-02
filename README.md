@@ -44,7 +44,9 @@ I would like to improve the functionality of the map. I would do this by adding 
 A reward system for providing good suggestions for food places. Each suggestion would give a user a certain amount of points which then could be used for discounts.
 
 a confirmation email being sent back to the person who puts in a suggestion with a unique ID so the person can check back on the status of their suggestion
-A pop up window with a confirmation that suggestion was made 
+A pop up window with a confirmation that suggestion was made.
+
+Anti spam pop up window before submsion of email
 
 ## Technologies Used
 
@@ -91,7 +93,7 @@ googole developer tools was used to test the website on all different screen res
 
 The map has been tested for normal map functionality i.e zoomin and movement. Also the searchbox has been tested on its ability to search for geolocations. I had issues with the searchbox to work correctly. After hours of trying to find a bug which didn't allow the searchbox to give suggestions I found out that I needed to enable more APIs from google cloud.
 
-The email functionality has also been tested extensivly using emailJS and private Gmail account
+The email functionality has also been tested extensivly using emailJS and private Gmail account. Emails require all fields to be filled in prior to submission
 
 The code was also tested on html and css validator
 
@@ -125,7 +127,8 @@ https://kterlecki.github.io/project-two/
 ## Content
 
 The contact form was taken from bootsnippet and adjusted to fit my needs
-Ideas for font, color and layout taken from the W3layouts link below
+Ideas for font, color and layout taken from the W3layouts link below.
+Some code recycled from milestone project-one. Updated and changes made
 
 ## Media
 
