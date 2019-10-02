@@ -27,6 +27,12 @@ body {
     white-space: nowrap;
 }
 
+.navbar-sub{
+    color:white;
+    display: block;
+    padding: .5rem 1rem;
+}
+
 /* --------------------------------Main page */
 
 .quote-p {
@@ -34,6 +40,7 @@ body {
     font-size: 20px;
     font-weight: 900;
     text-shadow: -1px 0 20px black, 0 1px black, 1px 0 black, 0 -1px;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 /* --------------------------------map*/
@@ -53,10 +60,14 @@ body {
     border-color: #4d90fe;
 }
 
+/* --------------------------------contact */
 
 
-
-
+.contact-form{
+    padding: 20px;
+    background: #ececfb;
+    font-family: 'Berkshire Swash', cursive;
+}
 
 
 /* --------------------------------footer */
@@ -94,4 +105,12 @@ footer {
 .footer-details {
     padding: 10px;
     text-align: center;
+}
+
+.footer-bg{
+    background-color: #adadad;
+}
+.footer-font {
+     font-family: 'Berkshire Swash', cursive;
+     color:white;
 }
