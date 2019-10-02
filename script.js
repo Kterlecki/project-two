@@ -1,8 +1,8 @@
  function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 53.350140, lng: -6.266155},
-          zoom: 10,
-          mapTypeId: 'roadmap'
+          zoom: 6,
+         
         });
 
         // Create the search box and link it to the UI element.
@@ -37,6 +37,18 @@
          {
             coords: { lat: 53.3421658, lng: -6.387406 },
             content: '<h1>TGI Fridays</h1>'
+        },
+        {
+            coords: { lat: 51.901682, lng: -8.4680356 },
+            content: '<h1>Greenes Restaurant</h1>'
+        },
+        {
+            coords: { lat: 51.8794007, lng: -8.4800796 },
+            content: '<h1>Comix Cafe</h1>'
+        },
+        {
+            coords: { lat: 51.898388, lng: -8.468106 },
+            content: '<h1>Yuan Ming Yuan</h1>'
         },
     ]
 
