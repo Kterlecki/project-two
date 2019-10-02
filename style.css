@@ -8,6 +8,25 @@ body {
     font-family: arial;
 }
 
+/* --------------------------------Navbar */
+
+.navbar-css {
+    font-family: 'Berkshire Swash', cursive;
+    background: rgba(253, 70, 62, 0.84);
+
+}
+
+.navbar-F {
+    color: white;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
 /* --------------------------------Main page */
 
 .quote-p {
@@ -16,25 +35,25 @@ body {
     font-weight: 900;
     text-shadow: -1px 0 20px black, 0 1px black, 1px 0 black, 0 -1px;
 }
+
 /* --------------------------------map*/
 
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
 
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 400px;
-      }
+#pac-input:focus {
+    border-color: #4d90fe;
+}
 
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
 
-     
 
 
 
@@ -42,39 +61,37 @@ body {
 
 /* --------------------------------footer */
 
-
-
 footer {
-  min-height: 100px;
-  margin: 0;
- }
+    min-height: 100px;
+    margin: 0;
+}
 
 
- .social-links {
-  padding-bottom: 15px;
- }
+.social-links {
+    padding-bottom: 15px;
+}
 
- .social-links li a i {
-  width: 32px;
-  height: 32px;
-  padding: 12px 0;
-  border-radius: 50%;
-  font-size: 13px;
-  line-height: 7px;
-  text-align: center;
-  color: #fafafa;
-  background: #8f8f8f;
-  transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
- }
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
 
- .social-links li a i:hover {
-  background: #e84610;
- }
+.social-links li a i:hover {
+    background: #e84610;
+}
 
- .footer-details {
-  padding: 10px;
-  text-align: center;
- }
+.footer-details {
+    padding: 10px;
+    text-align: center;
+}
