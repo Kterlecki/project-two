@@ -21,7 +21,7 @@ The UI colors that were chosen for this project emphasise each section and make 
 
 ## Foodies (homepage)
 
-The Foodies main page is based on a carousel of three images and text. Each image switches after a given period of time. Each image also has a different Paragraph written on it. This section is interactive de
+The Foodies main page is based on a carousel of three images and text. Each image switches after a given period of time. Each image also has a different Paragraph written on it. This section is responsive no matter which picture in the carousel is shown.
 
 ## Map
 
@@ -43,34 +43,45 @@ I would like to improve the functionality of the map. I would do this by adding 
 
 A reward system for providing good suggestions for food places. Each suggestion would give a user a certain amount of points which then could be used for discounts.
 
+a confirmation email being sent back to the person who puts in a suggestion with a unique ID so the person can check back on the status of their suggestion
+A pop up window with a confirmation that suggestion was made 
+
 ## Technologies Used
 
-HTML5 -HTML 5 was used as it uses semantic markups to effectively design webages.
+### HTML5 
+- HTML 5 was used as it uses semantic markups to effectively design webages.
 
-CSS3
+### CSS3
 
-was used for styling and layout options of the HTML pages.
+- was used for styling and layout options of the HTML pages.
 
-Bootstrap 4
+### Bootstrap 4
 
--was used to style and help with certain aspects of the layout of the HTML page
+- Was used to style and help with certain aspects of the layout of the HTML page
 
-JS
--this was used for the map and email sections
+### JS
+- this was used for the map and email sections
 
-JQuery
--this was used for bootstrap navbar and animation
+### Google maps
+- used to link the google Maps API
 
-Google Fonts
--has been used to style the font used. They provide a wide range of accessible fonts that can be used.
+### EmailJS
+- used to link the contact form to an email API service
 
-Font Awesome -was used to add in sharp looking icons. Font awesome provide a wide range of icons that are free of charge and can be used for a variety of scenarioes
-w3schools
--was used to optimise both CSS and HTML code. Helped me to adjust and insert different features.
+### JQuery
+- this was used for bootstrap navbar and animation
 
-[Stackoverflow]( https://stackoverflow.com/ /)
+### Google Fonts
+- has been used to style the font used. They provide a wide range of accessible fonts that can be used.
 
-Used this webiste for troubleshooting issues to common problems
+### Font Awesome 
+- was used to add in sharp looking icons. Font awesome provide a wide range of icons that are free of charge and can be used for a variety of scenarioes
+### w3schools
+- was used to optimise both CSS and HTML code. Helped me to adjust and insert different features.
+
+ ### [Stackoverflow]( https://stackoverflow.com/ /)
+
+- Used this webiste for troubleshooting issues to common problems
 
 # Testing
 
@@ -78,42 +89,49 @@ Testing was carried out on each navigation button on each site to ensure the lin
 
 googole developer tools was used to test the website on all different screen resolutions available and switching from landscape to portrait modes.
 
+The map has been tested for normal map functionality i.e zoomin and movement. Also the searchbox has been tested on its ability to search for geolocations. I had issues with the searchbox to work correctly. After hours of trying to find a bug which didn't allow the searchbox to give suggestions I found out that I needed to enable more APIs from google cloud.
+
+The email functionality has also been tested extensivly using emailJS and private Gmail account
+
 The code was also tested on html and css validator
 
 The entire website was tested on responsinator just in case anything was missed on googole developer tools
 
+The links in the footer were also tested for their functionality.
+
 Was also tested on real life devices like :
 
--Samsung S8 and S5
+- Samsung S8 and S5
 
--Iphone X
+- Iphone X
 
 ## Responsive testing
 
 The website has been designed to be responsive to different screen sizes. This was achieved by using Bootstrap.
 
-Deployment
+# Deployment
 
-I decided to use github to host my webpage. I found a guide on how to do this on the following page:
+I decided to use github to host my webpage. I found a guide on how to do this on the following page: https://www.codecademy.com/articles/f1-u3-github-pages
 
 Github Pages Guide
 One of the main reasons why I decided to use github is that we have used it through the course and I feel relatively familiar with it. It also helps that its free. It also extremely easy to use as it can host your webpage aslong as your code is present. This required no extra configurations.
 
 Please find a live Demo of the website below:
 
-https://kterlecki.github.io/first-milestone-project/
+https://kterlecki.github.io/project-two/
 
-#Credits
+# Credits
 
-##Content
+## Content
+
+The contact form was taken from bootsnippet and adjusted to fit my needs
+Ideas for font, color and layout taken from the W3layouts link below
+
+## Media
 
 The images were takn from http://lorempixel.com/
 
-##Media
-
-The images were takn from http://lorempixel.com/
-
-##Acknowledgements
+## Acknowledgements
 
 https://getbootstrap.com/docs/4.0/components/carousel/
 
