@@ -1,3 +1,5 @@
+// taken from google docs
+
  function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 53.350140, lng: -6.266155},
@@ -10,13 +12,10 @@
         var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-        // Bias the SearchBox results towards current map's viewport.
-        map.addListener('bounds_changed', function() {
-          searchBox.setBounds(map.getBounds());
-        });
+        
 
 
-
+/// basic code taken from youtube video as per refernce and edited
 
     var markers = [{
             coords: { lat: 53.287126, lng: -6.3693697 },
@@ -79,7 +78,7 @@
 
  
 
-////---------------------email service
+////---------------------email service--- taken from Code institute
 
 
 function sendMail(contactForm) {
@@ -96,5 +95,5 @@ function sendMail(contactForm) {
             console.log("FAILED", error);
         }
     );
-    return false;  // To block from loading a new page
+    return false;  
 }
