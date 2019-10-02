@@ -1,7 +1,7 @@
 #map {
-    height: 300px;
-    width: 90%%;
-}
+    height: 400px;
+    width: auto;
+   }
 
 body {
     height: 100%;
@@ -59,7 +59,15 @@ body {
 #pac-input:focus {
     border-color: #4d90fe;
 }
+.map-h{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Berkshire Swash', cursive;
+}
 
+.map-bg {
+    background: #ececfb;
+}
 /* --------------------------------contact */
 
 
@@ -69,7 +77,11 @@ body {
     font-family: 'Berkshire Swash', cursive;
 }
 
+.card {
+    background-color: #f8f9fa
+}
 
+b
 /* --------------------------------footer */
 
 footer {
