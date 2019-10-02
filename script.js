@@ -1,26 +1,22 @@
-function initMap() {
-    //  Options for map 
-    var options = {
-        zoom: 10,
-        center: { lat: 53.350140, lng: -6.266155 }
-    }
-    var map = new google.maps.Map(document.getElementById('map'), options)
+ function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 53.350140, lng: -6.266155},
+          zoom: 10,
+          mapTypeId: 'roadmap'
+        });
 
-    /*    var marker = new google.maps.Marker({
-            position:{lat:53.287126, lng:-6.3693697},
-            map:map,
-            icon:'http://maps.google.com/mapfiles/kml/pal2/icon32.png'
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
         });
-        
-        var infoWindow= new google.maps.InfoWindow({
-            content:'<h1>Mao</h1>'
-        });
-        
-        marker.addListener('click',function(){
-            infoWindow.open(map, marker);
-        })
-    */
-    // marker
+
+
+
 
     var markers = [{
             coords: { lat: 53.287126, lng: -6.3693697 },
@@ -69,21 +65,24 @@ function initMap() {
     }
 }
 
+ 
+
 ////---------------------email service
 
-function sendEmail(contactForm) {
-    emailjs.send('gmail', 'project_two',{
-        'from_name':contactForm.name.value,
-        'from_email': contactForm.emailaddress.value,
-        'restaurant_name':contactForm.name.value,
-        'restaurant_address':contactForm.name.value,
-        'project_request':contactForm.projectsummary.value
+
+function sendMail(contactForm) {
+    emailjs.send("gmail", "project_two", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "project_request": contactForm.projectsummary.value
     })
     .then(
-        function(response){
-            console.log('Success',response);
+        function(response) {
+            console.log("SUCCESS", response);
         },
-        function(error){
-            console.log('FAILED', error)
-        });
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
+    return false;  // To block from loading a new page
 }
